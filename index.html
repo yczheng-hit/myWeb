@@ -1,0 +1,138 @@
+<!--
+	h5文档声明
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!--指定关键字-->
+    <title>
+        欢迎
+    </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+        a:link,
+        a:visited{
+            color: rgb(51,51,51);
+        }
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        /*开头部分*/
+        header{
+            height: 80px;
+            background-color: rgba(102,90,80,0.9);
+        }
+        h1{
+            color: white;
+            font-size: 28px;
+            margin-left: 400px;
+            line-height: 80px;
+        }
+
+        /*设置主体背景颜色*/
+        main{
+            background-color: rgba(221,221,221,0.9);
+        }
+        /*设置导航栏背景颜色*/
+        main>nav{
+            width: 200px;
+            float: left;
+            background-color: silver;
+        }
+        /*设置导航栏所有文字上下居中和间距*/
+        main>nav *{text-align: center;}
+        main>nav>li*{padding:8px 0;}
+        /*设置导航栏标题字体和字间距*/
+        main>nav>h2{
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        main>nav a{
+            padding:0px 20px;
+            font-size: 17px;
+            display: block;
+        }
+
+        main>nav a:hover{
+            background-color: #333333;
+            color: #dddddd;
+        }
+
+
+
+
+        main>article{
+            float: left;
+        }
+
+        main>aside{
+            width: 100px;
+            float: right;
+            background-color: silver;
+        }
+
+        footer{
+            text-align:center;
+            height: 80px;
+            background-color: rgba(102,90,80,0.9);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1><a href="http://39.105.54.216">这里是我的网站 欢迎</a></font></h1>
+</header>
+
+<main class="clearfix">
+<nav class="clearfix">
+    <h2>笔记列表</h2>
+    <ul>
+        <li><a href="./noteweb/Stm32Cube.html" target="_blank">Stm32Cube笔记</a></li>
+        <li><a href="./noteweb/Stm32F4.html" target="_blank">Stm32F4笔记</a></li>
+        <li><a href="./noteweb/Stm32L4.html" target="_blank">Stm32L4笔记</a></li>
+        <li><a href="./noteweb/HTMLCSS.html" target="_blank">HTML/CSS笔记</a></li>
+        <li><a href="./noteweb/HIT.html" target="_blank">课内知识笔记</a></li>
+    </ul>
+</nav>
+<article>
+    <h2 class="linknames">常用链接</h2>
+
+    <p class="links">
+        <a href="https://www.baidu.com" target="_blank"> 百度</a> <br>
+        <a href="https://www.google.com/" target="_blank _blank"> Google</a> <br>
+        <a href="https://www.bing.com" target="_blank"> Bing</a> <br>
+        <a href="https://www.bilibili.com" target="_blank"> B站</a> <br>
+        <a href="https://www.youtube.com" target="_blank"> Youtube</a> <br>
+    </p>
+
+
+<!--    <h2 class="saber">Saber</h2>-->
+<!--    <p class="pic1">-->
+<!--        <a href="https://www.youtube.com" target="_blank"> <img src="picture/pic1.jpg" alt="这是我老婆" width="500"></a> <br>-->
+<!--    </p>-->
+
+</article>
+<aside>
+   注册部分暂未开放
+</aside>
+</main>
+
+<footer>
+    <h2 class="others"> 其他 </h2>
+    <p class="myma">
+        <a href="mailto:1271661038@qq.com"> 联系我</a>
+    </p>
+</footer>
+
+
+</body>
+</html>
