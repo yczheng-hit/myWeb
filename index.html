@@ -10,72 +10,92 @@
     <style>
         /*CSS样式*/
         /*设置链接字体颜色防止变蓝或变紫*/
-        a:link,
-        a:visited{
-            color: rgb(51,51,51);
-        }
+        /*a:link,*/
+        /*a:visited{*/
+        /*    color: rgb(51,51,51);*/
+        /*}*/
+        a{color: rgb(51,51,51);}
         .clearfix::after,
         .clearfix::before{
             content: '';
             display: table;
             clear: both;
         }
+        /*body属性*/
+        body{
+            background-color: #f0f0f0;
+        }
 
         /*开头部分*/
         header{
-            height: 80px;
-            background-color: rgba(102,90,80,0.9);
+            height: 46px;
+            background-color: rgb(48, 54, 67);
         }
-        h1{
-            color: white;
-            font-size: 28px;
-            margin-left: 400px;
-            line-height: 80px;
+        #h1tab{
+            color: #fff;
+            font-size: 24px;
+            margin-left: 12%;
+            line-height: 46px;
         }
+
 
         /*设置主体背景颜色*/
         main{
-            background-color: rgba(221,221,221,0.9);
+            margin-left: 12%;
+            margin-right: 13.3%;
+            margin-top: 27px;
+            background-color:white;
         }
         /*设置导航栏背景颜色*/
         main>nav{
-            width: 200px;
+            width: 18%;
+            margin: 12px;
             float: left;
-            background-color: silver;
+            background-color: #e2e2e2;
         }
         /*设置导航栏所有文字上下居中和间距*/
         main>nav *{text-align: center;}
-        main>nav>li*{padding:8px 0;}
+        main>nav>li*{padding:24px 0;}
 
         /*设置导航栏标题字体和字间距*/
         main>nav>h2{
-            font-size: 22px;
+            font-size: 18px;
             letter-spacing: 1px;
         }
-        main>nav a{
-            padding:0px 20px;
-            font-size: 17px;
+        .nav-link{
+            height: 40px;
             display: block;
+        }
+        .nav-list{
+            font-size: 17px;
+            line-height: 40px;
         }
         main>nav a:hover{
             background-color: #333333;
-            color: #dddddd;
+            color: #d0d0d0;
         }
+
+
+
 
         main>article{
             float: left;
         }
-
-        main>aside{
-            width: 100px;
-            float: right;
-            background-color: silver;
+        main>article>p>a{
+            text-align: center;
         }
 
         footer{
+            padding-top: 20px;
             text-align:center;
-            height: 80px;
-            background-color: rgba(102,90,80,0.9);
+            height: 86px;
+            background-color: #222222;
+        }
+        footer .email-link,
+        footer h2{
+            font-size: 16px;
+            line-height: 23px;
+            color: white;
         }
 
     </style>
@@ -84,47 +104,37 @@
 <body>
 
 <header>
-    <h1><a href="http://39.105.54.216">这里是我的网站 欢迎</a></font></h1>
+    <h1><a href="http://39.105.54.216" id="h1tab">这里是我的网站 欢迎</a></font></h1>
 </header>
 
 <main class="clearfix">
 <nav >
     <h2>笔记列表</h2>
-    <ul>
-        <li><a href="./noteweb/Stm32Cube.html" target="_blank">Stm32Cube笔记</a></li>
-        <li><a href="./noteweb/Stm32F4.html" target="_blank">Stm32F4笔记</a></li>
-        <li><a href="./noteweb/Stm32L4.html" target="_blank">Stm32L4笔记</a></li>
-        <li><a href="./noteweb/HTMLCSS.html" target="_blank">HTML/CSS笔记</a></li>
-        <li><a href="./noteweb/HIT.html" target="_blank">课内知识笔记</a></li>
-    </ul>
+
+        <a href="noteweb/microcontrollers.html" class="nav-link" target="_blank"><span class="nav-list">嵌入式笔记</span></a>
+        <a href="./noteweb/HTMLCSS.html" class="nav-link" target="_blank"><span class="nav-list">网页知识笔记</span></a>
+        <a href="./noteweb/HIT.html" class="nav-link" target="_blank"><span class="nav-list">课内知识笔记</span></a>
+        <a href="noteweb/others.html" class="nav-link" target="_blank"><span class="nav-list">其他笔记</span></a>
+
 </nav>
 <article>
     <h2 class="linknames">常用链接</h2>
 
     <p class="links">
-        <a href="https://www.baidu.com" target="_blank"> 百度</a> <br>
+        <a href="https://www.baidu.com" target="_blank" class="art-link"> 百度</a> <br>
         <a href="https://www.google.com/" target="_blank _blank"> Google</a> <br>
         <a href="https://www.bing.com" target="_blank"> Bing</a> <br>
         <a href="https://www.bilibili.com" target="_blank"> B站</a> <br>
         <a href="https://www.youtube.com" target="_blank"> Youtube</a> <br>
     </p>
 
-
-<!--    <h2 class="saber">Saber</h2>-->
-<!--    <p class="pic1">-->
-<!--        <a href="https://www.youtube.com" target="_blank"> <img src="picture/pic1.jpg" alt="这是我老婆" width="500"></a> <br>-->
-<!--    </p>-->
-
 </article>
-<aside>
-   注册部分暂未开放
-</aside>
 </main>
 
 <footer>
     <h2 class="others"> 其他 </h2>
     <p class="myma">
-        <a href="mailto:1271661038@qq.com"> 联系我</a>
+        <a href="mailto:1271661038@qq.com" class="email-link"> 联系我的邮箱</a>
     </p>
 </footer>
 
