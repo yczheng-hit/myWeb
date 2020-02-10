@@ -1,17 +1,15 @@
-<!--
-	h5文档声明
--->
 <!doctype html>
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <!--指定关键字-->
     <title>
         欢迎
     </title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <style>
+        /*CSS样式*/
+        /*设置链接字体颜色防止变蓝或变紫*/
         a:link,
         a:visited{
             color: rgb(51,51,51);
@@ -48,6 +46,7 @@
         /*设置导航栏所有文字上下居中和间距*/
         main>nav *{text-align: center;}
         main>nav>li*{padding:8px 0;}
+
         /*设置导航栏标题字体和字间距*/
         main>nav>h2{
             font-size: 22px;
@@ -58,14 +57,10 @@
             font-size: 17px;
             display: block;
         }
-
         main>nav a:hover{
             background-color: #333333;
             color: #dddddd;
         }
-
-
-
 
         main>article{
             float: left;
@@ -93,7 +88,7 @@
 </header>
 
 <main class="clearfix">
-<nav class="clearfix">
+<nav >
     <h2>笔记列表</h2>
     <ul>
         <li><a href="./noteweb/Stm32Cube.html" target="_blank">Stm32Cube笔记</a></li>
