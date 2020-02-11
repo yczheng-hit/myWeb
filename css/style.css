@@ -21,17 +21,73 @@ header .header-right{float: right;}
     background-color: rgba(166,170,155,0.9);
 }
 
+.header-left .fas{
+    margin-right: 3px;
+}
 
-.header-right a{
-    width: 120px;
+.header-right .controllers{
+    width: 140px;
     height: 38px;
     background-color:#424242;
     text-align: center;
     font-size: 16px;
 }
 .header-right a:hover{
-    background-color: rgba(233,219,224,0.24);
+    background-color: #5d5d69;
 }
+.header-right .fa-wrench{
+    margin-right: 6px;
+}
+.header-right .qrcode-link{
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+}
+.header-right .fa-qrcode{
+    font-size: 30px;
+    text-align: center;
+    line-height: 46px;
+    width: 46px;
+    display: block;
+}
+.header-right .nomargin{
+    margin: 0;
+}
+.header-right .qrcode{
+    width: 180px;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: -71px;
+    transition: height 400ms;
+    background-color: #5d5d69;
+}
+.header-right .qrcode img{
+    width: 150px;
+    margin: 8px 15px;
+}
+.header-right .qrcode *:first-child{
+    margin-top: 14px;
+    display: block;
+}
+.header-right .qrcode *:last-child{
+    margin-bottom: 14px;
+    display: block;
+}
+.myinfo{
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+
+.header-right .qrcode-link:hover>.qrcode{
+    height: 426.7px;
+}
+/*.header-right .contactme{*/
+/*    width: 400px;*/
+/*}*/
 /*#h1tab{*/
 /*    color: #fff;*/
 /*    font-size: 24px;*/
