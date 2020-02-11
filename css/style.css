@@ -1,9 +1,97 @@
-/*p{*/
-/*	 color:red;*/
-/*	 font-size:25px;*/
-/* }*/
+/*开头部分*/
+header{
+    width: 100%;
+    line-height:38px;
+    background-color: rgb(48, 54, 67);
+}
+header .header-left,
+header li{float: left;}
+header .header-right{float: right;}
+.header-left li{margin: 4px 0;}
+.header-right li{margin: 4px 12px;}
+
+.topbar a{
+    font-size: 15px;
+    color: #b0b0b0;
+    display: block;
+    padding:0 10px;
+}
+.topbar a:hover{
+    color: #fff;
+    background-color: rgba(166,170,155,0.9);
+}
 
 
-/*.pic1,.saber,.link,.top,.linkname,.myma,.others{*/
-/*	text-align: center;*/
+.header-right a{
+    width: 120px;
+    height: 38px;
+    background-color:#424242;
+    text-align: center;
+    font-size: 16px;
+}
+.header-right a:hover{
+    background-color: rgba(233,219,224,0.24);
+}
+/*#h1tab{*/
+/*    color: #fff;*/
+/*    font-size: 24px;*/
+/*    margin-left: 12%;*/
+/*    line-height: 46px;*/
+/*    float: left;*/
 /*}*/
+/*.music-box{*/
+/*    float: right;*/
+/*}*/
+
+
+/*设置主体背景颜色*/
+main{
+    margin-top: 27px;
+    background-color:white;
+}
+/*设置导航栏背景颜色*/
+main>nav{
+    width: 18%;
+    margin: 12px;
+    float: left;
+    background-color: #e2e2e2;
+}
+/*设置导航栏所有文字上下居中*/
+main>nav *{text-align: center;}
+/*设置导航栏标题字体和字间距*/
+main>nav>h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.nav-link{
+    height: 40px;
+    display: block;
+}
+.nav-list{
+    font-size: 17px;
+    line-height: 40px;
+}
+main>nav a:hover{
+    background-color: #333333;
+    color: #d0d0d0;
+}
+
+main>article{
+    float: left;
+}
+main>article>p>a{
+    text-align: center;
+}
+
+footer{
+    padding-top: 20px;
+    text-align:center;
+    height: 86px;
+    background-color: #222222;
+}
+footer .email-link,
+footer h2{
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
