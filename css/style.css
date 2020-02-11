@@ -24,7 +24,6 @@ header .header-right{float: right;}
 .header-left .fas{
     margin-right: 3px;
 }
-
 .header-right .controllers{
     width: 140px;
     height: 38px;
@@ -63,6 +62,7 @@ header .header-right{float: right;}
     left: -71px;
     transition: height 400ms;
     background-color: #5d5d69;
+    box-shadow: 0 0  10px rgba(0,0,0,0.4);
 }
 .header-right .qrcode img{
     width: 150px;
@@ -80,24 +80,88 @@ header .header-right{float: right;}
     display: block;
     text-align: center;
     line-height: 25px;
+    color: white;
 }
-
 .header-right .qrcode-link:hover>.qrcode{
     height: 426.7px;
 }
-/*.header-right .contactme{*/
-/*    width: 400px;*/
-/*}*/
-/*#h1tab{*/
-/*    color: #fff;*/
-/*    font-size: 24px;*/
-/*    margin-left: 12%;*/
-/*    line-height: 46px;*/
-/*    float: left;*/
-/*}*/
-/*.music-box{*/
-/*    float: right;*/
-/*}*/
+
+
+/*上方导航*/
+.header-wrapper{
+    height: 80px;
+    background-color: white;
+    margin: 15px auto;
+    box-shadow:0 0 10px rgba(0,0,0,0.3) ;
+}
+#title{
+    font-family:微软雅黑;
+    font-weight: bold;
+    font-size: 28px;
+    float: left;
+    height: 55px;
+    margin: 12.5px 25px;
+}
+.header-wrapper ul{
+    float: left;
+}
+.header-wrapper>ul .logo-list{
+    float: left;
+    height: 60px;
+    margin: 10px ;
+}
+.header-wrapper>ul .logo-list a{
+    display: block;
+}
+
+#logo-link-bilibili{
+    height: 60px;
+    width: 131px;
+    background-image: url("./../picture/bili-logo.png");
+    background-size: cover;
+}
+#logo-link-hit{
+    height: 60px;
+    width: 241px;
+    background-image: url("./../picture/HITlogo.png");
+    background-size: cover;
+}
+
+.header-wrapper .search-wrapper{
+    margin: 20px;
+    background-color: red;
+    float: right;
+    border: rgb(224,224,224) 1px solid;
+}
+.search-wrapper input,.search-btn{
+    float: left;
+    height: 36px;
+    padding: 0;
+    border: rgb(224,224,224) 1px solid;
+    border-top: none;
+    border-bottom: none;
+}
+.search-wrapper input{
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.search-wrapper input:focus{
+    outline: 2px solid silver;
+}
+.search-btn{
+    width: 44px;
+    color: #616161;
+    background-color: white;
+    transition: background-color 0.25s;
+}
+.search-btn:hover{
+    background-color: silver;
+}
+.fa-search{
+    font-size: 23px;
+}
+
 
 
 /*设置主体背景颜色*/
@@ -145,6 +209,7 @@ footer{
     height: 86px;
     background-color: #222222;
 }
+
 footer .email-link,
 footer h2{
     font-size: 16px;

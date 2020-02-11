@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4c9eaed-b931-43ae-9080-a4a4a7cfdc53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       <workItem from="1581133728847" duration="2367000" />
       <workItem from="1581345011271" duration="4882000" />
       <workItem from="1581391530821" duration="947000" />
-      <workItem from="1581393729679" duration="17054000" />
+      <workItem from="1581393729679" duration="27374000" />
     </task>
     <servers />
   </component>
@@ -107,10 +106,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581136594023" />
+    <state x="1941" y="155" width="1153" height="810" key="dock-window-1" timestamp="1581417949094">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1941" y="155" width="1153" height="810" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581417949094" />
     <state x="586" y="149" key="ftp.server.browser" timestamp="1581083610487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="149" key="ftp.server.browser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581083610487" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1581416060461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581416060461" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581416063861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581416063861" />
     <state x="586" y="298" key="webDeployment.PermissionsDialog" timestamp="1581083549273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
