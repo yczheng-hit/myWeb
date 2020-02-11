@@ -36,8 +36,11 @@
             font-size: 24px;
             margin-left: 12%;
             line-height: 46px;
+            float: left;
         }
-
+        .music-box{
+            float: right;
+        }
 
         /*设置主体背景颜色*/
         main{
@@ -53,10 +56,8 @@
             float: left;
             background-color: #e2e2e2;
         }
-        /*设置导航栏所有文字上下居中和间距*/
+        /*设置导航栏所有文字上下居中*/
         main>nav *{text-align: center;}
-        main>nav>li*{padding:24px 0;}
-
         /*设置导航栏标题字体和字间距*/
         main>nav>h2{
             font-size: 18px;
@@ -74,7 +75,6 @@
             background-color: #333333;
             color: #d0d0d0;
         }
-
 
 
 
@@ -104,17 +104,20 @@
 <body>
 
 <header>
-    <h1><a href="http://39.105.54.216" id="h1tab">这里是我的网站 欢迎</a></font></h1>
+    <h1><a href="http://39.105.54.216" id="h1tab">这里是我的网站 欢迎</a></h1>
+    <div class="music-box">
+        <audio src="./music/miku.mp3" preload="auto" loop controls></audio>
+    </div>
 </header>
 
 <main class="clearfix">
 <nav >
     <h2>笔记列表</h2>
 
-        <a href="noteweb/microcontrollers.html" class="nav-link" target="_blank"><span class="nav-list">嵌入式笔记</span></a>
-        <a href="./noteweb/HTMLCSS.html" class="nav-link" target="_blank"><span class="nav-list">网页知识笔记</span></a>
-        <a href="./noteweb/HIT.html" class="nav-link" target="_blank"><span class="nav-list">课内知识笔记</span></a>
-        <a href="noteweb/others.html" class="nav-link" target="_blank"><span class="nav-list">其他笔记</span></a>
+    <a href="noteweb/microcontrollers.html" class="nav-link" target="_blank"><span class="nav-list">嵌入式笔记</span></a>
+    <a href="./noteweb/HTMLCSS.html" class="nav-link" target="_blank"><span class="nav-list">网页知识笔记</span></a>
+    <a href="./noteweb/HIT.html" class="nav-link" target="_blank"><span class="nav-list">课内知识笔记</span></a>
+    <a href="noteweb/others.html" class="nav-link" target="_blank"><span class="nav-list">其他笔记</span></a>
 
 </nav>
 <article>
