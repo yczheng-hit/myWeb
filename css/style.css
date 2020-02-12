@@ -129,7 +129,6 @@ header .header-right{float: right;}
 
 .header-wrapper .search-wrapper{
     margin: 20px;
-    background-color: red;
     float: right;
     border: rgb(224,224,224) 1px solid;
 }
@@ -162,10 +161,51 @@ header .header-right{float: right;}
     font-size: 23px;
 }
 
+.toolbar{
+    width: 48px;
+    /*height: 200px;*/
+    border: #bbb 1px solid;
+    position: fixed;
+    bottom: 100px;
+    margin-left: 1250px;
+    margin-right: -676px;
+    right: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
+.toolbar-list a{
+    width: 46px;
+    height: 48px;
+    background-color: rgba(228,231,233,0.84);
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.toolbar-list i{
+    text-align: center;
+    line-height: 48px;
+    font-size: 38px;
+    position: absolute;
+    color: #7d7d7d;
+    transition: left 0.3s;
+}
+.toolbar-list .fa-angle-up{
+    left: 50px;
+    font-size: 45px;
+}
+.toolbar-list .fa-home{
+    left: 0;
+}
+.toolbar-list a:first-child:hover .fa-angle-up{
+    left: 8px;
+}
+.toolbar-list a:first-child:hover .fa-home{
+    left: -50px;
+}
 
-/*设置主体背景颜色*/
+    /*设置主体背景颜色*/
 main{
+    height: 2000px;
     margin-top: 27px;
     background-color:white;
 }
