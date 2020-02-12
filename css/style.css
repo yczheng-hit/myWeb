@@ -119,6 +119,11 @@ header .header-right{float: right;}
     width: 131px;
     background-image: url("./../picture/bili-logo.png");
     background-size: cover;
+    transition: all .2s;
+}
+#logo-link-bilibili:hover{
+    transform:translateY(-1px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 #logo-link-hit{
     height: 60px;
@@ -126,7 +131,10 @@ header .header-right{float: right;}
     background-image: url("./../picture/HITlogo.png");
     background-size: cover;
 }
-
+#logo-link-hit:hover{
+    transform:translateY(-1px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
 .header-wrapper .search-wrapper{
     margin: 20px;
     float: right;
@@ -163,7 +171,6 @@ header .header-right{float: right;}
 
 .toolbar{
     width: 48px;
-    /*height: 200px;*/
     border: #bbb 1px solid;
     position: fixed;
     bottom: 100px;
@@ -202,7 +209,12 @@ header .header-right{float: right;}
 .toolbar-list a:first-child:hover .fa-home{
     left: -50px;
 }
-
+/*音乐盒*/
+.music-box{
+    top: 100px;
+    right: 2px;
+    position: fixed;
+}
     /*设置主体背景颜色*/
 main{
     height: 2000px;
