@@ -2,34 +2,42 @@
 header {
   width: 100%;
   line-height: 38px;
-  background-color: #303643;
+  background-color: rgb(48, 54, 67);
 }
+
 header .header-left,
 header li {
   float: left;
 }
+
 header .header-right {
   float: right;
 }
+
 .header-left li {
   margin: 4px 0;
 }
+
 .header-right li {
   margin: 4px 12px;
 }
+
 .topbar a {
   font-size: 15px;
   color: #b0b0b0;
   display: block;
   padding: 0 10px;
 }
+
 .topbar a:hover {
   color: #fff;
   background-color: rgba(166, 170, 155, 0.9);
 }
+
 .header-left .fas {
   margin-right: 3px;
 }
+
 .header-right .controllers {
   width: 140px;
   height: 38px;
@@ -37,17 +45,21 @@ header .header-right {
   text-align: center;
   font-size: 16px;
 }
+
 .header-right a:hover {
   background-color: #5d5d69;
 }
+
 .header-right .fa-wrench {
   margin-right: 6px;
 }
+
 .header-right .qrcode-link {
   padding: 0;
   margin: 0 auto;
   position: relative;
 }
+
 .header-right .fa-qrcode {
   font-size: 30px;
   text-align: center;
@@ -55,9 +67,11 @@ header .header-right {
   width: 46px;
   display: block;
 }
+
 .header-right .nomargin {
   margin: 0;
 }
+
 .header-right .qrcode {
   width: 180px;
   height: 0;
@@ -70,27 +84,34 @@ header .header-right {
   background-color: #5d5d69;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+
 .header-right .qrcode img {
   width: 150px;
   margin: 8px 15px;
 }
+
 .header-right .qrcode *:first-child {
   margin-top: 14px;
   display: block;
 }
+
 .header-right .qrcode *:last-child {
   margin-bottom: 14px;
   display: block;
 }
+
 .myinfo {
   display: block;
   text-align: center;
   line-height: 25px;
   color: white;
 }
+
 .header-right .qrcode-link:hover > .qrcode {
   height: 426.7px;
 }
+
+
 /*上方导航*/
 .header-wrapper {
   height: 80px;
@@ -98,6 +119,7 @@ header .header-right {
   margin: 15px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 #title {
   font-family: 微软雅黑;
   font-weight: bold;
@@ -106,72 +128,86 @@ header .header-right {
   height: 55px;
   margin: 12.5px 25px;
 }
+
 .header-wrapper ul {
   float: left;
 }
+
 .header-wrapper > ul .logo-list {
   float: left;
   height: 60px;
   margin: 10px;
 }
+
 .header-wrapper > ul .logo-list a {
   display: block;
 }
+
 #logo-link-bilibili {
   height: 60px;
   width: 131px;
-  background-image: url("../picture/bili-logo.png");
+  background-image: url("./../picture/bili-logo.png");
   background-size: cover;
-  transition: all 0.2s;
+  transition: all .2s;
 }
+
 #logo-link-bilibili:hover {
   transform: translateY(-1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 #logo-link-hit {
   height: 60px;
   width: 241px;
-  background-image: url("../picture/HITlogo.png");
+  background-image: url("./../picture/HITlogo.png");
   background-size: cover;
 }
+
 #logo-link-hit:hover {
   transform: translateY(-1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .header-wrapper .search-wrapper {
   margin: 20px;
   float: right;
-  border: #e0e0e0 1px solid;
+  border: rgb(224, 224, 224) 1px solid;
 }
-.search-wrapper input,
-.search-btn {
+
+.search-wrapper input, .search-btn {
   float: left;
   height: 36px;
   padding: 0;
-  border: #e0e0e0 1px solid;
+  border: rgb(224, 224, 224) 1px solid;
   border-top: none;
   border-bottom: none;
 }
+
 .search-wrapper input {
   border: none;
   padding: 0 10px;
   font-size: 15px;
 }
+
 .search-wrapper input:focus {
   outline: 2px solid silver;
 }
+
 .search-btn {
   width: 44px;
   color: #616161;
   background-color: white;
   transition: background-color 0.25s;
 }
+
 .search-btn:hover {
   background-color: silver;
 }
+
 .fa-search {
   font-size: 23px;
 }
+
 .toolbar {
   width: 48px;
   border: #bbb 1px solid;
@@ -182,6 +218,7 @@ header .header-right {
   right: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .toolbar-list a {
   width: 46px;
   height: 48px;
@@ -190,6 +227,7 @@ header .header-right {
   position: relative;
   overflow: hidden;
 }
+
 .toolbar-list i {
   text-align: center;
   line-height: 48px;
@@ -198,66 +236,75 @@ header .header-right {
   color: #7d7d7d;
   transition: left 0.3s;
 }
+
 .toolbar-list .fa-angle-up {
   left: 50px;
   font-size: 45px;
 }
+
 .toolbar-list .fa-home {
   left: 0;
 }
+
 .toolbar-list a:first-child:hover .fa-angle-up {
   left: 8px;
 }
+
 .toolbar-list a:first-child:hover .fa-home {
   left: -50px;
 }
+
 /*音乐盒*/
 .music-box {
   top: 100px;
   right: 2px;
   position: fixed;
 }
+
 main {
   height: 2000px;
   margin-top: 27px;
   background-color: white;
+
+  nav {
+    width: 18%;
+    margin: 12px;
+    float: left;
+    background-color: #e2e2e2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    a {
+      height: 40px;
+      display: block;
+      font-size: 17px;
+      line-height: 40px;
+      &:hover {
+        background-color: #333333;
+        color: #d0d0d0;
+      }
+    }
+
+    article {
+      float: left;
+    }
+  }
 }
-main nav {
-  width: 18%;
-  margin: 12px;
-  float: left;
-  background-color: #e2e2e2;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-main nav h2 {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-main nav a {
-  height: 40px;
-  display: block;
-  font-size: 17px;
-  line-height: 40px;
-}
-main nav a:hover {
-  background-color: #333333;
-  color: #d0d0d0;
-}
-main nav article {
-  float: left;
-}
+
 footer {
   padding-top: 20px;
   text-align: center;
   height: 86px;
   background-color: #222222;
+
+  .email-link, h2 {
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+  }
 }
-footer .email-link,
-footer h2 {
-  font-size: 16px;
-  line-height: 23px;
-  color: white;
-}
-/*# sourceMappingURL=style.css.map */

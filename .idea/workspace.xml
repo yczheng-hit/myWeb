@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4c9eaed-b931-43ae-9080-a4a4a7cfdc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/base.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/font_1631497_vslabvguidh/iconfont.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/font_1631497_vslabvguidh/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/icon/font_1631497_vslabvguidh/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Less File" />
       </list>
     </option>
   </component>
@@ -48,8 +44,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="E:/less/node_modules/.bin/lessc" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -79,7 +75,10 @@
       <workItem from="1581482281968" duration="6787000" />
       <workItem from="1581489314690" duration="1054000" />
       <workItem from="1581495198152" duration="3904000" />
-      <workItem from="1581500054694" duration="3000" />
+      <workItem from="1581500054694" duration="1560000" />
+      <workItem from="1581506330514" duration="22000" />
+      <workItem from="1581516910092" duration="194000" />
+      <workItem from="1581583931927" duration="2201000" />
     </task>
     <servers />
   </component>
@@ -99,26 +98,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581399792807" />
+    <state x="602" y="121" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1581583973428">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="602" y="121" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583973428" />
     <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1581399820176">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581399820176" />
-    <state x="430" y="210" key="EditFileWatcherDialog" timestamp="1581489575120">
+    <state x="430" y="210" key="EditFileWatcherDialog" timestamp="1581583985917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="210" key="EditFileWatcherDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581489575120" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1581489285762">
+    <state x="430" y="210" key="EditFileWatcherDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583985917" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1581583984412">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581489285762" />
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583984412" />
     <state x="612" y="137" key="RollbackChangesDialog" timestamp="1581137019802">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="612" y="137" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581137019802" />
-    <state x="272" y="58" key="SettingsEditor" timestamp="1581498045452">
+    <state x="272" y="58" key="SettingsEditor" timestamp="1581583987203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="58" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581498045452" />
+    <state x="272" y="58" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583987203" />
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1580978382615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
