@@ -4,61 +4,69 @@ header {
   line-height: 38px;
   background-color: #303643;
 }
-header .header-left,
-header li {
+header div .header-left {
   float: left;
 }
-header .header-right {
-  float: right;
-}
-.header-left li {
+header div .header-left li {
+  float: left;
   margin: 4px 0;
 }
-.header-right li {
-  margin: 4px 12px;
-}
-.topbar a {
+header div .header-left a {
   font-size: 15px;
   color: #b0b0b0;
   display: block;
   padding: 0 10px;
 }
-.topbar a:hover {
-  color: #fff;
-  background-color: rgba(166, 170, 155, 0.9);
-}
-.header-left .fas {
+header div .header-left a .fas {
   margin-right: 3px;
 }
-.header-right .controllers {
+header div .header-left a:hover {
+  color: #fff;
+  background-color: #5d5d69;
+}
+header div .header-right {
+  float: right;
+}
+header div .header-right li {
+  float: left;
+  margin: 4px 12px;
+}
+header div .header-right li a {
   width: 140px;
-  height: 38px;
   background-color: #424242;
   text-align: center;
   font-size: 16px;
+  color: #b0b0b0;
+  display: block;
+  padding: 0 10px;
 }
-.header-right a:hover {
-  background-color: #5d5d69;
+header div .header-right li a .fas {
+  margin-right: 3px;
 }
-.header-right .fa-wrench {
+header div .header-right li a .fa-wrench {
   margin-right: 6px;
 }
-.header-right .qrcode-link {
+header div .header-right li a:hover {
+  background-color: #5d5d69;
+  color: #fff;
+}
+header div .header-right li:first-of-type {
+  margin: 0;
+}
+header div .header-right li:first-of-type a {
+  width: 46px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
 }
-.header-right .fa-qrcode {
+header div .header-right li:first-of-type a .fa-qrcode {
   font-size: 30px;
   text-align: center;
   line-height: 46px;
   width: 46px;
   display: block;
 }
-.header-right .nomargin {
-  margin: 0;
-}
-.header-right .qrcode {
+header div .header-right li:first-of-type a div {
   width: 180px;
   height: 0;
   overflow: hidden;
@@ -70,35 +78,34 @@ header .header-right {
   background-color: #5d5d69;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-.header-right .qrcode img {
+header div .header-right li:first-of-type a div img {
   width: 150px;
   margin: 8px 15px;
 }
-.header-right .qrcode *:first-child {
+header div .header-right li:first-of-type a div *:first-child {
   margin-top: 14px;
   display: block;
 }
-.header-right .qrcode *:last-child {
+header div .header-right li:first-of-type a div *:last-child {
   margin-bottom: 14px;
   display: block;
 }
-.myinfo {
+header div .header-right li:first-of-type a div span {
   display: block;
   text-align: center;
   line-height: 25px;
   color: white;
 }
-.header-right .qrcode-link:hover > .qrcode {
+header div .header-right li:first-of-type a:hover div {
   height: 426.7px;
 }
-/*上方导航*/
-.header-wrapper {
+#nav-header div {
   height: 80px;
   background-color: white;
   margin: 15px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#title {
+#nav-header div #title {
   font-family: 微软雅黑;
   font-weight: bold;
   font-size: 28px;
@@ -106,45 +113,48 @@ header .header-right {
   height: 55px;
   margin: 12.5px 25px;
 }
-.header-wrapper ul {
+#nav-header div ul {
   float: left;
 }
-.header-wrapper > ul .logo-list {
+#nav-header div ul li {
   float: left;
   height: 60px;
   margin: 10px;
 }
-.header-wrapper > ul .logo-list a {
+#nav-header div ul li a {
   display: block;
 }
-#logo-link-bilibili {
+#nav-header div ul li a #logo-link-bilibili {
+  margin: 0;
   height: 60px;
   width: 131px;
   background-image: url("../picture/bili-logo.png");
   background-size: cover;
   transition: all 0.2s;
 }
-#logo-link-bilibili:hover {
+#nav-header div ul li a #logo-link-bilibili:hover {
   transform: translateY(-1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-#logo-link-hit {
+#nav-header div ul li a #logo-link-hit {
+  margin: 0;
   height: 60px;
   width: 241px;
   background-image: url("../picture/HITlogo.png");
   background-size: cover;
 }
-#logo-link-hit:hover {
+#nav-header div ul li a #logo-link-hit:hover {
   transform: translateY(-1px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.header-wrapper .search-wrapper {
+#nav-header div div {
+  height: auto;
   margin: 20px;
   float: right;
   border: #e0e0e0 1px solid;
 }
-.search-wrapper input,
-.search-btn {
+#nav-header div div form input,
+#nav-header div div form button {
   float: left;
   height: 36px;
   padding: 0;
@@ -152,27 +162,27 @@ header .header-right {
   border-top: none;
   border-bottom: none;
 }
-.search-wrapper input {
+#nav-header div div form input {
   border: none;
   padding: 0 10px;
   font-size: 15px;
 }
-.search-wrapper input:focus {
+#nav-header div div form input:focus {
   outline: 2px solid silver;
 }
-.search-btn {
+#nav-header div div form button {
   width: 44px;
   color: #616161;
   background-color: white;
   transition: background-color 0.25s;
 }
-.search-btn:hover {
-  background-color: silver;
-}
-.fa-search {
+#nav-header div div form button .fa-search {
   font-size: 23px;
 }
-.toolbar {
+#nav-header div div form button:hover {
+  background-color: silver;
+}
+#toolbar {
   width: 48px;
   border: #bbb 1px solid;
   position: fixed;
@@ -182,7 +192,7 @@ header .header-right {
   right: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.toolbar-list a {
+#toolbar li a {
   width: 46px;
   height: 48px;
   background-color: rgba(228, 231, 233, 0.84);
@@ -190,7 +200,7 @@ header .header-right {
   position: relative;
   overflow: hidden;
 }
-.toolbar-list i {
+#toolbar li a i {
   text-align: center;
   line-height: 48px;
   font-size: 38px;
@@ -198,22 +208,22 @@ header .header-right {
   color: #7d7d7d;
   transition: left 0.3s;
 }
-.toolbar-list .fa-angle-up {
+#toolbar li a .fa-angle-up {
   left: 50px;
   font-size: 45px;
 }
-.toolbar-list .fa-home {
+#toolbar li a .fa-home {
   left: 0;
 }
-.toolbar-list a:first-child:hover .fa-angle-up {
+#toolbar li a:first-child:hover .fa-angle-up {
   left: 8px;
 }
-.toolbar-list a:first-child:hover .fa-home {
+#toolbar li a:first-child:hover .fa-home {
   left: -50px;
 }
 /*音乐盒*/
-.music-box {
-  top: 100px;
+#music-box {
+  top: 140px;
   right: 2px;
   position: fixed;
 }
