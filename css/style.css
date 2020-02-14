@@ -223,9 +223,17 @@ header div .header-right li:first-of-type a:hover div {
 }
 /*音乐盒*/
 #music-box {
-  top: 140px;
-  right: 2px;
+  top: 146px;
+  right: 50%;
+  margin-right: -930px;
   position: fixed;
+  width: 300px;
+  height: 452px;
+  overflow: hidden;
+}
+#music-box iframe {
+  width: 100%;
+  height: 100%;
 }
 main {
   height: 2000px;
@@ -255,8 +263,19 @@ main nav a:hover {
   background-color: #333333;
   color: #d0d0d0;
 }
-main nav article {
+main article {
   float: left;
+}
+main article #google-calendar {
+  margin: 12px auto;
+  padding: 0;
+  border: solid 1px #777;
+  width: 768px;
+  height: 600px;
+}
+main article #google-calendar iframe {
+  width: 100%;
+  height: 100%;
 }
 footer {
   padding-top: 20px;
