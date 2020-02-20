@@ -1,8 +1,24 @@
 /*开头部分*/
+body{
+    padding-top: 46px;
+    position: absolute;
+    width: 100%;
+    margin:0;
+}
+span {
+    font-size: 0;
+    overflow: hidden;
+    width: 2px;
+    height: 2px;
+}
+iframe:hover{ pointer-events:none;}
 header {
     width: 100%;
     line-height: 38px;
     background-color: rgb(48, 54, 67);
+    position: fixed;
+    top: 0;
+    z-index: 2001;
     div {
         .header-left {
             float: left;
@@ -115,11 +131,10 @@ header {
     div{
         height: 80px;
         background-color: white;
-        margin: 15px auto;
+        margin: 15px auto ;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         //.w1250{};
         #title {
-            font-family: 微软雅黑;
             font-weight: bold;
             font-size: 28px;
             float: left;
@@ -212,11 +227,14 @@ header {
     margin-right: -676px;
     right: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2000;
     li{
+        //border: 1px solid #000;
         a {
             width: 46px;
             height: 48px;
             background-color: rgba(228, 231, 233, 0.84);
+            border: 1px solid #bbbbbb;
             display: block;
             position: relative;
             overflow: hidden;
@@ -235,6 +253,10 @@ header {
             .fa-home {
                 left: 0;
             }
+            .fa-cog{
+                left: 3px;
+            }
+
         }
         a:first-child:hover .fa-angle-up {
             left: 8px;
