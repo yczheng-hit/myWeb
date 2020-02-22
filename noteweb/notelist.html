@@ -3,13 +3,161 @@ HITzyc
 2020/2/11
 12:39
 -->
-<!DOCTYPE html>
-<html lang="zh">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>notelist</title>
+    <meta charset="UTF-8"/>
+    <title>
+        笔记
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" href="./../icon/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./../icon/font_1631497_vslabvguidh/iconfont.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.min.css">
+    <link rel="stylesheet" href="css/JSeffect.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="shortcut icon"
+          href="https://www.bilibili.com/favicon.ico">
+    <script src="./../js/tools.js"></script>
 </head>
-<body>
-    笔记列表
+
+<body id="screen">
+
+<header>
+    <div class="w1250 clearfix topbar">
+        <ul class="header-left">
+            <li class="header-tag"><a href="http://39.105.54.216"><i class="fas fa-home"></i>主站</a></li>
+            <li class="header-tag"><a href="http://39.105.54.216/noteweb/notelist.html"><i class="fas fa-pencil-alt"></i>笔记</a></li>
+            <li class="header-tag"><a href="http://39.105.54.216/tool/toollist.html"><i class="fas fa-tools"></i>工具</a></li>
+            <li class="header-tag"><a href="http://39.105.54.216/fun/funlist.html"><i class="fas fa-gamepad"></i>兴趣</a></li>
+            <li class="header-tag"><a href="http://47.94.166.180/nextcloud"><i class="fas fa-download"></i>网盘</a></li>
+        </ul>
+        <ul class="header-right">
+            <li>
+                <a href="javascript:;">
+                    <i class="fas fa-qrcode"></i>
+                    <div>
+                        <img src="./../picture/qq.jpg" alt="1271661038">
+                        <span class="myinfo">QQ</span>
+                        <img src="./../picture/weixin.jpg" alt="1271661038">
+                        <span class="myinfo">微信</span>
+                        <span class="myinfo">QQ号:1271661038</span>
+                    </div>
+                </a>
+            </li>
+            <li><a href="http://47.94.166.180"  target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
+            <li><a href="https://swas.console.aliyun.com/?spm=5176.12818093.0.dswas.488716d0fST5Qq#/servers"
+                   target="_blank"><i class="fas fa-wrench"></i>阿里控制台</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="nav-header">
+    <div class="header-wrapper w1250">
+        <h1 id="title">笔记列表</h1>
+        <div class="search-wrapper">
+            <form class="search-input" action="#">
+                <input type="text">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<ul id="toolbar">
+    <li class="toolbar-list">
+        <a href="#screen" title="回到顶端"><i class="fas fa-home"></i> <i class="fas fa-angle-up"></i></a>
+    </li>
+    <li>
+        <a href="javascript:" title="设置鼠标特效" id="swMouseEffect">
+            <i class="fas fa-cog"> </i>
+        </a>
+    </li>
+</ul>
+
+
+
+<div id="music-box">
+    <iframe src="//music.163.com/outchain/player?type=0&id=4859376950&auto=0&height=430"
+            frameborder="no"></iframe>
+</div>
+<main class="w1250">
+    <nav>
+        <div class="firstMenu"><a href="./notelist.html" style="text-align: center;width: 100%">笔记列表</a></div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./microcontrollers.html">嵌入式</a></div>
+        <div class="secondMenu menuClose">
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">Stm32F4</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">Stm32Cube</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">Stm32L4</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./web.html">前端</a></div>
+        <div class="secondMenu menuClose">
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">html</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">css</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">JavaScript</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">Vue</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./hit.html">课内</a></div>
+        <div class="secondMenu menuClose">
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">数字集成电路</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">模拟集成电路</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">Verilog</a></div>
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">其他</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./others.html">其他</a></div>
+        <div class="secondMenu menuClose">
+            <div><button class="btn2ndMenu"><i class="fas fa-plus"></i></button><a href="#">常用linux命令</a></div>
+        </div>
+    </nav>
+    <!--    处理二级菜单-->
+    <script>
+		function changeIcon(obj,tmp) {
+			if(!tmp){ //没合上
+				removeClass(obj,"fa-plus");
+				addClass(obj,"fa-minus")
+			}else {
+				addClass(obj,"fa-plus");
+				removeClass(obj,"fa-minus")
+			}
+		}
+		var div1stMenu = document.getElementsByClassName("firstMenu");
+		var div2ndMenu = document.getElementsByClassName("secondMenu");
+		var btn1stMenu = document.getElementsByClassName("btn1stMenu");
+		// var btn2ndMenu = document.getElementsByClassName("btn2ndMenu")
+		//一级菜单开关
+		for (let i=0 ;i<btn1stMenu.length ;i++ ){
+			btn1stMenu[i].onclick = function () {
+				toggleClass(div2ndMenu[i],"menuClose");
+				changeIcon(btn1stMenu[i].getElementsByTagName("i")[0],hasclass(div2ndMenu[i],"menuClose"));
+			}
+		}
+		//二级菜单开关
+		for(let i=0;i<div2ndMenu.length;i++){
+			var btn2ndMenu = div2ndMenu[i].getElementsByClassName("btn2ndMenu");
+			// console.log(btn2ndMenu);
+			for(let j=0;j<btn2ndMenu.length;j++){
+				btn2ndMenu[j].onclick = function () {
+					// console.log(j);
+					// changeIcon(btn2ndMenu[i].getElementsByTagName("i")[0],false);
+				}
+			}
+		}
+		console.log(btn1stMenu.length);
+    </script>
+    <article>
+        <div id="google-calendar">
+
+        </div>
+    </article>
+</main>
+
+<footer>
+    <h2 class="others"> 其他 </h2>
+    <p class="myma">
+        <a href="mailto:1271661038@qq.com" class="email-link"> 联系我的邮箱</a>
+    </p>
+</footer>
 </body>
+
 </html>

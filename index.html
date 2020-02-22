@@ -9,151 +9,17 @@
     <link rel="stylesheet" href="./icon/fontawesome-free-5.12.1-web/css/all.min.css">
     <link rel="stylesheet" href="./icon/font_1631497_vslabvguidh/iconfont.min.css">
     <link rel="stylesheet" type="text/css" href="./css/base.min.css">
-
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="shortcut icon"
           href="https://www.bilibili.com/favicon.ico">
+    <script src="js/tools.js">
+
+    </script>
     <script type="text/javascript">
-		"use strict"
-		//鼠标跟随函数
-		var Follow = function () {
-			//用id获取
-			var $ = function (i) {return document.getElementById(i)},
-				//添加事件 在e上触发f事件
-				addEvent = function (o, e, f) {o.addEventListener ? o.addEventListener(e, f, false) : o.attachEvent('on'+e, function(){f.call(o)})},
-				OBJ = [], sp, rs, N = 0, m;
-			var init = function (id, config) {
-				this.config = config || {};
-				this.obj = $(id);
-				sp = this.config.speed || 4;
-				rs = this.config.animR || 1;
-				m = {x: $(id).offsetWidth * .5, y: $(id).offsetHeight * .5};
-				this.setXY();
-				this.element = this.start();
-			};
-			init.prototype = {
-				setXY : function () {
-					this.obj.onmousemove = function (e) {
-						e = e || window.event;
-						m.x = e.pageX;
-						m.y = e.pageY;
-					};
-				},
-				start : function () {
-					//fn是外部传入的函数 这部分只执行一次
-					var  OO, o, fn = this.config.fn;
-					OBJ[N++] = OO = new CObj(null, 0, 0);
-					OO.css.display = "none";
-					for(var i=0;i<200;i+=20){
-						var O = OO;
-						for(var j=10; j<40; j+=1){
-							var x = fn(i, j).x,
-								y = fn(i, j).y;
-							//父元素一级一级往下叠加
-							OBJ[N++] = o = new CObj(O , x, y);
-							o.css.backgroundColor = "rgb("+j*10+",99,88)";
-							O = o;
-						}
-					}
-					//这部分会持续执行 16ms一次
-					setInterval(function() {
-						for (var i = 0; i < N; i++) {
-							OBJ[i].run();
-						}
-					}, 16);
-					return OBJ;
-				},
-				stop : function () {
-					var obj = document.getElementsByClassName("mouseEffectClass");
-					var tmp = obj.length;
-					for (let i=0 ;i<tmp;i++){
-						document.body.removeChild(obj[0]);
-					}
-					N = 0;
-				}
 
-			}
-			var CObj = function (p, cx, cy) {
-				var obj = document.createElement("span");
-				obj.className = "mouseEffectClass";
-				this.css = obj.style;
-				this.css.position = "absolute";
-				this.css.left = "50%";
-				this.css.zIndex = 1000 + N;
-				this.css.background = "rgb("+N*2+",0,0)";
-
-				document.getElementById("screen").appendChild(obj);
-				this.ddx = 0;
-				this.ddy = 0;
-				//用来存储上一次位置
-				this.PX = 0;
-				this.PY = 0;
-				//初始化为0
-				this.x = 0;
-				this.y = 0;
-				//父元素（上一个点）的位置
-				this.x0 = 0;
-				this.y0 = 0;
-				//恒定偏移量
-				this.cx = cx;
-				this.cy = cy;
-				//指向上一个
-				this.parent = p;
-			}
-			// 决定运动轨迹
-			CObj.prototype.run = function () {
-				//xy是坐标值
-				if (!this.parent) {
-					this.x0 = m.x;
-					this.y0 = m.y;
-				} else {
-					this.x0 = this.parent.x;
-					this.y0 = this.parent.y;
-				}
-				this.x = this.PX += (this.ddx += ((this.x0 - this.PX - this.ddx) + this.cx) / rs) / sp;
-				this.y = this.PY += (this.ddy += ((this.y0 - this.PY - this.ddy) + this.cy) / rs) / sp;
-				// this.x = this.PX += ((this.x0 - this.PX ) + this.cx) ;
-				// this.y = this.PY += ((this.y0 - this.PY ) + this.cy) ;
-				this.css.left = Math.round(this.x) + 'px';
-				this.css.top = Math.round(this.y) + 'px';
-			}
-			return init;
-		}();
-		//拖拽函数
-		function drag(obj){
-			obj.onmousedown = function(event){
-				var dx=0,
-					dy=0;
-				dx = event.pageX - obj.offsetLeft;
-				dy = event.pageY - obj.offsetTop;
-				document.onmousemove = function (event) {
-					obj.style.left = event.pageX -dx+ "px";
-					obj.style.top = event.pageY -dy+ "px";
-				};
-				document.onmouseup = function (event) {
-					document.onmousedown = document.onmousemove = null;
-				};
-			};
-		}
-		//添加事件函数
-		var addEvent = function (o, e, f) {o.addEventListener ? o.addEventListener(e, f, false): o.attachEvent('on'+e, function(){f.call(o)})};
 		window.onload = function () {
 			//控制特效开关
-			var swMouseEffect = document.getElementById("swMouseEffect");
-			var mouseEffetON = true;
-			var mouseEffectOBJ = new Follow('screen', {speed: 2,
-				animR : 1,
-				fn : function (i, j) {
-					//函数曲线
-					return {
-						x : j/8*Math.cos(i),
-						y : j/8*Math.sin(i)
-					}
-				}});
-			swMouseEffect.onclick = function () {
-				mouseEffetON = !mouseEffetON;
-				mouseEffetON? mouseEffectOBJ.start():mouseEffectOBJ.stop();
-			}
+
 		}
     </script>
 </head>
@@ -161,7 +27,6 @@
 <body id="screen">
 
 <header>
-
     <div class="w1250 clearfix topbar">
         <ul class="header-left">
             <li class="header-tag"><a href="http://39.105.54.216"><i class="fas fa-home"></i>主站</a></li>
@@ -183,7 +48,6 @@
                     </div>
                 </a>
             </li>
-
             <li><a href="http://47.94.166.180"  target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
             <li><a href="https://swas.console.aliyun.com/?spm=5176.12818093.0.dswas.488716d0fST5Qq#/servers"
                    target="_blank"><i class="fas fa-wrench"></i>阿里控制台</a></li>
@@ -226,7 +90,25 @@
         </a>
     </li>
 </ul>
-
+<script>
+	var swMouseEffect = document.getElementById("swMouseEffect");
+	var mouseEffetON = false,
+		effectInit = true;
+	var mouseEffectOBJ = new Follow('screen', {speed: 2,
+		animR : 1,
+		fn : function (i, j) {
+			//函数曲线
+			return {
+				x : j/8*Math.cos(i),
+				y : j/8*Math.sin(i)
+			}
+		}});
+	mouseEffectOBJ.stop();
+	swMouseEffect.onclick = function () {
+		mouseEffetON = !mouseEffetON;
+		mouseEffetON? mouseEffectOBJ.start():mouseEffectOBJ.stop();
+	}
+</script>
 
 
 <div id="music-box">
@@ -235,7 +117,6 @@
 </div>
 <main class="w1250">
     <nav>
-
         <h2>常用链接</h2>
         <a href="https://www.bilibili.com" target="_blank">b站</a>
         <a href="https://www.w3school.com.cn" target="_blank">w3c中文网站</a>
@@ -243,11 +124,26 @@
         <a href="https://gitee.com/HITCRTzyc/dashboard" target="_blank">码云</a>
     </nav>
     <article>
-        <!--    <div id="google-calendar">-->
-        <!--        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=NGp2MjFuc2JudXBhdHE0amVtdnJsN2FvYmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;mode=WEEK"-->
-        <!--                frameborder="0" scrolling="no" ></iframe>-->
-        <!--    </div>-->
-
+        <div id="verLog">
+            <ul>
+                <li>
+                    <h2>版本更新</h2>
+                </li>
+                <li>
+                    <h3>2020/02/22</h3>
+                    <p>配置笔记页面 加入笔记页面侧边栏 默认关闭鼠标特效 右下设置打开</p>
+                </li>
+                <li>
+                    <h3>2020/02/20</h3>
+                    <p>加入鼠标特效</p>
+                </li>
+            </ul>
+        </div>
+        <div id="google-calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=NGp2MjFuc2JudXBhdHE0amVtdnJsN2FvYmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;mode=WEEK"
+                    frameborder="0" scrolling="no" >
+            </iframe>
+        </div>
     </article>
 </main>
 
