@@ -318,7 +318,7 @@ main {
     }
     article {
         float: left;
-        width: 900px;
+        width: 1000px;
         #verLog{
             max-height: 400px;
             overflow: auto;
@@ -343,6 +343,25 @@ main {
                 li:first-child{
                     list-style: none;
                 }
+            }
+        }
+        #schedule{
+            margin: 12px;
+            border: #d4d4d4 1px solid;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            padding: 10px;
+            &Top{
+                font-size: 24px;
+                text-align: center;
+                margin: 16px;
+            }
+            &Content{
+                margin: 4px;
+                td,th{
+                    border:  #d4d4d4 1px solid;
+                    text-align: center;
+                }
+                //border:  #d4d4d4 1px solid;
             }
         }
         #google-calendar{

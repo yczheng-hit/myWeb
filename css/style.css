@@ -288,7 +288,7 @@ main nav a:hover {
 }
 main article {
   float: left;
-  width: 900px;
+  width: 1000px;
 }
 main article #verLog {
   max-height: 400px;
@@ -313,6 +313,25 @@ main article #verLog ul li p {
 }
 main article #verLog ul li:first-child {
   list-style: none;
+}
+main article #schedule {
+  margin: 12px;
+  border: #d4d4d4 1px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+main article #scheduleTop {
+  font-size: 24px;
+  text-align: center;
+  margin: 16px;
+}
+main article #scheduleContent {
+  margin: 4px;
+}
+main article #scheduleContent td,
+main article #scheduleContent th {
+  border: #d4d4d4 1px solid;
+  text-align: center;
 }
 main article #google-calendar {
   margin: 12px auto;

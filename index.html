@@ -48,7 +48,7 @@
                     </div>
                 </a>
             </li>
-            <li><a href="http://47.94.166.180"  target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
+            <li><a href="http://47.94.166.180" target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
             <li><a href="https://swas.console.aliyun.com/?spm=5176.12818093.0.dswas.488716d0fST5Qq#/servers"
                    target="_blank"><i class="fas fa-wrench"></i>阿里控制台</a></li>
         </ul>
@@ -94,19 +94,21 @@
 	var swMouseEffect = document.getElementById("swMouseEffect");
 	var mouseEffetON = false,
 		effectInit = true;
-	var mouseEffectOBJ = new Follow('screen', {speed: 2,
-		animR : 1,
-		fn : function (i, j) {
+	var mouseEffectOBJ = new Follow('screen', {
+		speed: 2,
+		animR: 1,
+		fn: function (i, j) {
 			//函数曲线
 			return {
-				x : j/8*Math.cos(i),
-				y : j/8*Math.sin(i)
+				x: j / 8 * Math.cos(i),
+				y: j / 8 * Math.sin(i)
 			}
-		}});
+		}
+	});
 	mouseEffectOBJ.stop();
 	swMouseEffect.onclick = function () {
 		mouseEffetON = !mouseEffetON;
-		mouseEffetON? mouseEffectOBJ.start():mouseEffectOBJ.stop();
+		mouseEffetON ? mouseEffectOBJ.start() : mouseEffectOBJ.stop();
 	}
 </script>
 
@@ -120,14 +122,96 @@
         <h2>常用链接</h2>
         <a href="https://www.bilibili.com" target="_blank">b站</a>
         <a href="https://www.w3school.com.cn" target="_blank">w3c中文网站</a>
-        <a href="http://nec.netease.com/standard" target="_blank">网易前端规范</a>
+        <a href="http://starydy.xyz/" target="_blank">StarBlog!</a>
         <a href="https://gitee.com/HITCRTzyc/dashboard" target="_blank">码云</a>
     </nav>
     <article>
+
+        <div id="schedule">
+            <div id="scheduleTop" style="text-align:center">2020春季学期课表</div>
+            <div id="scheduleContent">
+                <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse" class="addlist_01">
+                    <tr>
+                        <th width="36" height="30" colspan="2">&nbsp;</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                    </tr>
+
+                    <tr>
+                        <td width="25">上午</td>
+                        <td width="40">第1,2节</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">数字集成电路设计基础</br>来逢昌[1-12]周致知13
+                        </td>
+                        <td width="118">嵌入式系统及应用</br>桑胜田[1-8]周正心727
+                        </td>
+                        <td width="118">数字集成电路设计基础</br>来逢昌[1-12]周致知13
+                        </td>
+                        <td width="118">&nbsp</td>
+                    </tr>
+
+                    <tr class="bgcol">
+                        <td width="25">上午</td>
+                        <td width="40">第3,4节</td>
+                        <td width="118">嵌入式系统及应用</br>桑胜田[1-8]周正心727
+                            </br>
+                            数字图像处理基础</br>胡悦[1，2，5-8，10]周正心714
+                        </td>
+                        <td width="118">基于Verilog的数字系统设计(双语) </br>王进祥[1-7]周致知22</br>
+                            模拟集成电路设计基础（双语）</br>王永生[8-13]周致知22
+                        </td>
+                        <td width="118">MEMS基础（双语）</br>陈伟平[7-13]周正心710</br>
+                            射频微电子学概论（双语）</br>高志强[1-6]周正心304</br>
+                            数字图像处理基础</br>胡悦[1，2，5-8，10]周正心714
+                        </td>
+                        <td width="118">基于Verilog的数字系统设计(双语) </br>王进祥[1-7]周致知22</br>
+                            模拟集成电路设计基础（双语）</br>王永生[8-13]周致知22
+                        </td>
+                        <td width="118">MEMS基础（双语）</br>陈伟平[7-13]周正心710</br>
+                            射频微电子学概论（双语）</br>高志强[1-6]周正心304
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="25">下午</td>
+                        <td width="40">第5,6节</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">计算机软件技术基础</br>蒋明[1-8]周正心510
+                        </td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">计算机软件技术基础</br>蒋明[1-8]周正心510
+                        </td>
+                        <td width="118">&nbsp</td>
+                    </tr>
+
+                    <tr class="bgcol">
+                        <td width="25">下午</td>
+                        <td width="40">第7,8节</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">&nbsp</td>
+                        <td width="118">&nbsp</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--        <div id="google-calendar">-->
+        <!--            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=NGp2MjFuc2JudXBhdHE0amVtdnJsN2FvYmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;mode=WEEK"-->
+        <!--                    frameborder="0" scrolling="no" >-->
+        <!--            </iframe>-->
+        <!--        </div>-->
         <div id="verLog">
             <ul>
                 <li>
                     <h2>版本更新</h2>
+                </li>
+                <li>
+                    <h3>2020/02/23</h3>
+                    <p>加入课表 修改页面布局</p>
                 </li>
                 <li>
                     <h3>2020/02/22</h3>
@@ -138,11 +222,6 @@
                     <p>加入鼠标特效</p>
                 </li>
             </ul>
-        </div>
-        <div id="google-calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=NGp2MjFuc2JudXBhdHE0amVtdnJsN2FvYmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;mode=WEEK"
-                    frameborder="0" scrolling="no" >
-            </iframe>
         </div>
     </article>
 </main>
