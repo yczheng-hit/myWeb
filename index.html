@@ -29,7 +29,7 @@
 <header>
     <div class="w1250 clearfix topbar">
         <ul class="header-left">
-            <li class="header-tag"><a href="http://39.105.54.216"><i class="fas fa-home"></i>主站</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top"><i class="fas fa-home"></i>主站</a></li>
             <li class="header-tag"><a href="./noteweb/notelist.html"><i class="fas fa-pencil-alt"></i>笔记</a></li>
             <li class="header-tag"><a href="./tool/toollist.html"><i class="fas fa-tools"></i>工具</a></li>
             <li class="header-tag"><a href="./fun/funlist.html"><i class="fas fa-gamepad"></i>兴趣</a></li>
@@ -129,6 +129,7 @@
 
         <div id="schedule">
             <div id="scheduleTop" style="text-align:center">2020春季学期课表</div>
+            <div id="scheduleDay">今天是</div>
             <div id="scheduleContent">
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse" class="addlist_01">
                     <tr>
@@ -144,11 +145,11 @@
                         <td width="25">上午</td>
                         <td width="40">第1,2节</td>
                         <td width="118">&nbsp</td>
-                        <td width="118">数字集成电路设计基础</br>来逢昌[1-12]周致知13
+                        <td width="118"><a href="http://www.livedu.com.cn/ispace4.0/moocxsxx/queryWdkc.do">数字集成电路设计基础</a></br>来逢昌[1-12]周致知13
                         </td>
-                        <td width="118">嵌入式系统及应用</br>桑胜田[1-8]周正心727
+                        <td width="118"><a href="https://www.yuketang.cn/web/?index">嵌入式系统及应用</a></br>桑胜田[1-8]周正心727
                         </td>
-                        <td width="118">数字集成电路设计基础</br>来逢昌[1-12]周致知13
+                        <td width="118"><a href="http://www.livedu.com.cn/ispace4.0/moocxsxx/queryWdkc.do">数字集成电路设计基础</a></br>来逢昌[1-12]周致知13
                         </td>
                         <td width="118">&nbsp</td>
                     </tr>
@@ -156,22 +157,22 @@
                     <tr class="bgcol">
                         <td width="25">上午</td>
                         <td width="40">第3,4节</td>
-                        <td width="118">嵌入式系统及应用</br>桑胜田[1-8]周正心727
+                        <td width="118"><a href="https://www.yuketang.cn/web/?index">嵌入式系统及应用</a></br>桑胜田[1-8]周正心727
                             </br>
                             数字图像处理基础</br>胡悦[1，2，5-8，10]周正心714
                         </td>
-                        <td width="118">基于Verilog的数字系统设计(双语) </br>王进祥[1-7]周致知22</br>
-                            模拟集成电路设计基础（双语）</br>王永生[8-13]周致知22
+                        <td width="118"><a href="http://i.mooc.chaoxing.com/space/index?t=1582456076666">基于Verilog的数字系统设计(双语)</a></br>王进祥[1-7]周致知22</br>
+                            模拟集成电路设计基础(双语)</br>王永生[8-13]周致知22
                         </td>
-                        <td width="118">MEMS基础（双语）</br>陈伟平[7-13]周正心710</br>
-                            射频微电子学概论（双语）</br>高志强[1-6]周正心304</br>
+                        <td width="118">MEMS基础(双语)</br>陈伟平[7-13]周正心710</br>
+                            <a href="https://www.yuketang.cn/web/?index">射频微电子学概论(双语)</a></br>高志强[1-6]周正心304</br>
                             数字图像处理基础</br>胡悦[1，2，5-8，10]周正心714
                         </td>
-                        <td width="118">基于Verilog的数字系统设计(双语) </br>王进祥[1-7]周致知22</br>
-                            模拟集成电路设计基础（双语）</br>王永生[8-13]周致知22
+                        <td width="118"><a href="http://i.mooc.chaoxing.com/space/index?t=1582456076666">基于Verilog的数字系统设计(双语)</a></br>王进祥[1-7]周致知22</br>
+                            模拟集成电路设计基础(双语)</br>王永生[8-13]周致知22
                         </td>
-                        <td width="118">MEMS基础（双语）</br>陈伟平[7-13]周正心710</br>
-                            射频微电子学概论（双语）</br>高志强[1-6]周正心304
+                        <td width="118">MEMS基础(双语)</br>陈伟平[7-13]周正心710</br>
+                            <a href="https://www.yuketang.cn/web/?index">射频微电子学概论(双语)</a></br>高志强[1-6]周正心304
                         </td>
                     </tr>
 
@@ -199,6 +200,21 @@
                 </table>
             </div>
         </div>
+        <script>
+            var scheduleDay = document.getElementById("scheduleDay");
+            var d = new Date();
+            var weekday=new Array(7);
+            weekday[0]="周日";
+            weekday[1]="周一";
+            weekday[2]="周二";
+            weekday[3]="周三";
+            weekday[4]="周四";
+            weekday[5]="周五";
+            weekday[6]="周六";
+            // console.log("今天是" + weekday[d.getDay()]);
+            console.log(scheduleDay);
+            scheduleDay.innerHTML += weekday[d.getDay()];
+        </script>
         <!--        <div id="google-calendar">-->
         <!--            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=NGp2MjFuc2JudXBhdHE0amVtdnJsN2FvYmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showDate=1&amp;mode=WEEK"-->
         <!--                    frameborder="0" scrolling="no" >-->
@@ -228,6 +244,7 @@
 
 <footer>
     <h2 class="others"> 其他 </h2>
+    <p class="ICP"><a href="http://www.beian.miit.gov.cn/" target="_blank">黑ICP备20000706号</a></p>
     <p class="myma">
         <a href="mailto:1271661038@qq.com" class="email-link"> 联系我的邮箱</a>
     </p>

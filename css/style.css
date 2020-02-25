@@ -325,8 +325,17 @@ main article #scheduleTop {
   text-align: center;
   margin: 16px;
 }
+main article #scheduleDay {
+  float: right;
+  margin: 6px;
+  height: 18px;
+  background-color: #bfa;
+}
 main article #scheduleContent {
   margin: 4px;
+}
+main article #scheduleContent a:hover {
+  color: red;
 }
 main article #scheduleContent td,
 main article #scheduleContent th {
@@ -347,8 +356,15 @@ main article #google-calendar iframe {
 footer {
   padding-top: 20px;
   text-align: center;
-  height: 86px;
   background-color: #222222;
+}
+footer .ICP {
+  text-align: center;
+  margin: 12px;
+}
+footer .ICP a {
+  font-size: 16px;
+  color: white;
 }
 footer .email-link,
 footer h2 {
