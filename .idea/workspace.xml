@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4c9eaed-b931-43ae-9080-a4a4a7cfdc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/JSeffect.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/JSeffect.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/base.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/blog.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noteweb/web01/css/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/base.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/reset.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/notelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/notelist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/toollist.html" beforeDir="false" afterPath="$PROJECT_DIR$/tool/toollist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +54,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/noteweb/web01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tool" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\html_study\myWeb\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\html_study\myWeb\tool" />
       <recent name="E:\html_study\myWeb\noteweb\web01" />
       <recent name="E:\html_study\myWeb\noteweb" />
       <recent name="E:\html_study\myWeb" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\html_study\myWeb\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -122,7 +126,8 @@
       <workItem from="1582509221733" duration="1432000" />
       <workItem from="1582554847432" duration="618000" />
       <workItem from="1582623639077" duration="2026000" />
-      <workItem from="1582625978812" duration="8336000" />
+      <workItem from="1582625978812" duration="8414000" />
+      <workItem from="1582714882533" duration="4024000" />
     </task>
     <task id="LOCAL-00001" summary="调整iframe样式，可调节">
       <created>1581665243141</created>
@@ -152,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582629571257</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成第一篇博客 简易油猴插件实现">
+      <created>1582634735967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582634735967</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +175,8 @@
     <MESSAGE value="配置笔记页面 加入笔记页面侧边栏 默认关闭鼠标特效 右下设置打开" />
     <MESSAGE value="加入课表 修改页面布局" />
     <MESSAGE value="整理前端笔记页面 设置自动展开" />
-    <option name="LAST_COMMIT_MESSAGE" value="整理前端笔记页面 设置自动展开" />
+    <MESSAGE value="完成第一篇博客 简易油猴插件实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成第一篇博客 简易油猴插件实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Configure_Path_Variables" timestamp="1582433611795">
@@ -190,10 +203,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="121" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583973428" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1582629568120">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1582634734478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582629568120" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582634734478" />
     <state x="430" y="210" key="EditFileWatcherDialog" timestamp="1581583985917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -258,10 +271,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="272" y="58" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582365175341" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1582437068392">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1582634755846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582437068392" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582634755846" />
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1580978382615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -286,10 +299,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581416060461" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1581416063861">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582723254789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581416063861" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582723254789" />
     <state x="586" y="298" key="webDeployment.PermissionsDialog" timestamp="1581083549273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

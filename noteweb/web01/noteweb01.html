@@ -1,0 +1,184 @@
+<!--
+HITzyc
+2020/2/11
+12:39
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>
+        笔记
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" href="./../../icon/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./../../icon/font_1631497_vslabvguidh/iconfont.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.min.css">
+    <link rel="stylesheet" href="css/JSeffect.min.css">
+    <link rel="stylesheet" href="css/blog.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="shortcut icon"
+          href="https://www.bilibili.com/favicon.ico">
+    <script src="./../../js/tools.js"></script>
+</head>
+
+<body id="screen">
+
+<header>
+    <div class="w1250 clearfix topbar">
+        <ul class="header-left">
+            <li class="header-tag"><a href="http://zycccccc.top"><i class="fas fa-home"></i>主站</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/noteweb/notelist.html"><i class="fas fa-pencil-alt"></i>笔记</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/tool/toollist.html"><i class="fas fa-tools"></i>工具</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/fun/funlist.html"><i class="fas fa-gamepad"></i>兴趣</a></li>
+            <li class="header-tag"><a href="http://47.94.166.180/nextcloud"><i class="fas fa-download"></i>网盘</a></li>
+        </ul>
+        <ul class="header-right">
+            <li>
+                <a href="javascript:;">
+                    <i class="fas fa-qrcode"></i>
+                    <div>
+                        <img src="./../../picture/qq.jpg" alt="1271661038">
+                        <span class="myinfo">QQ</span>
+                        <img src="./../../picture/weixin.jpg" alt="1271661038">
+                        <span class="myinfo">微信</span>
+                        <span class="myinfo">QQ号:1271661038</span>
+                    </div>
+                </a>
+            </li>
+            <li><a href="http://47.94.166.180"  target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
+            <li><a href="https://swas.console.aliyun.com/?spm=5176.12818093.0.dswas.488716d0fST5Qq#/servers"
+                   target="_blank"><i class="fas fa-wrench"></i>阿里控制台</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="nav-header">
+    <div class="header-wrapper w1250">
+        <h1 id="title">笔记列表</h1>
+        <div class="search-wrapper">
+            <form class="search-input" action="#">
+                <input type="text">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<ul id="toolbar">
+    <li class="toolbar-list">
+        <a href="#screen" title="回到顶端"><i class="fas fa-home"></i> <i class="fas fa-angle-up"></i></a>
+    </li>
+    <li>
+        <a href="javascript:" title="设置鼠标特效" id="swMouseEffect">
+            <i class="fas fa-cog"> </i>
+        </a>
+    </li>
+</ul>
+
+
+
+<div id="music-box">
+    <iframe src="//music.163.com/outchain/player?type=0&id=4859376950&auto=0&height=430"
+            frameborder="no"></iframe>
+</div>
+<main class="w1250">
+    <nav>
+        <div class="firstMenu"><a href="./../notelist.html" style="text-align: center;width: 100%">笔记列表</a></div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./../microcontrollers.html">嵌入式</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./../microcontrollersf4.html">Stm32F4</a></div>
+            <div><a href="./../microcontrollerscube.html">Stm32Cube</a></div>
+            <div><a href="./../microcontrollersl4.html">Stm32L4</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./../web.html">前端</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./../webhtml.html">html</a></div>
+            <div><a href="./../webcss.html">css</a></div>
+            <div><a href="./../webjs.html">JavaScript</a></div>
+            <div><a href="./../webjquery.html">JQuery</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./../hit.html">课内</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./../hitdigital.html">数字集成电路</a></div>
+            <div><a href="./../hitanalog.html">模拟集成电路</a></div>
+            <div><a href="./../hitverilog.html">Verilog</a></div>
+            <div><a href="./../hitothers.html">其他</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./../others.html">其他</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./../otherslinux.html">常用linux命令</a></div>
+        </div>
+    </nav>
+    <!--    处理二级菜单-->
+    <script>
+		function changeIcon(obj,tmp) {
+			if(!tmp){ //没合上
+				removeClass(obj,"fa-plus");
+				addClass(obj,"fa-minus")
+			}else {
+				addClass(obj,"fa-plus");
+				removeClass(obj,"fa-minus")
+			}
+		}
+		var div2ndMenu = document.getElementsByClassName("secondMenu");
+		var btn1stMenu = document.getElementsByClassName("btn1stMenu");
+		//一级菜单开关
+		for (let i=0 ;i<btn1stMenu.length ;i++ ){
+			btn1stMenu[i].onclick = function () {
+				toggleClass(div2ndMenu[i],"menuClose");
+				changeIcon(btn1stMenu[i].getElementsByTagName("i")[0],hasclass(div2ndMenu[i],"menuClose"));
+			}
+		}
+		toggleClass(div2ndMenu[1],"menuClose");
+		changeIcon(btn1stMenu[1].getElementsByTagName("i")[0],hasclass(div2ndMenu[1],"menuClose"));
+    </script>
+    <article>
+        <div id="articleList">
+            <h2>简易油猴脚本开发</h2>
+            <h3>适用于<a href="http://www.livedu.com.cn/ispace4.0/moocxsxx/queryWdkc.do">融优学堂</a></h3>
+            <p>脚本开发基于原生JS，用于融优学堂刷网课，可强制调整倍速和一键完成。</p>
+            <p>打开视频播放页面，发现页面加载完成后按F12无法打开浏览器控制台，应该是网站做了限制，解决方法如下：</p>
+            <p>一、在另一个网站打开控制台后通过网址进入；</p>
+            <p>二、页面未加载完成时狂按F12，小心别多按；</p>
+            <p>三、上面两个都是自己琢磨的傻子方法，上网查后了解到鼠标点一下地址栏就按F12就有效果。</p>
+            <hr>
+            <p>随便加入一个课程（用外校的不怕翻车）顺利打开控制台后选中播放器，如下图所示。</p>
+            <img src="./pic/web0101.png" alt="选中播放器图片">
+            <p>右侧箭头标出对开发有效的部分，分别为video标签的id，DOM方法onended和链接，该网站所有的页面，播放器id都一样，
+                所以我们写的时候也不需要额外操作，直接使用代码获取对象即可。</p>
+            <code>document.getElementById("myVideo")</code>
+            <p>根据以上获取的id到w3c官网查video标签的DOM属性，找到有用的是currentTime和playbackRate。</p>
+            <p>前者是直接跳转时间，后者是调整倍速播放。</p>
+            <p>经测试时间的跳转无效，而倍速播放有效，最高16倍速（找到好东西了）。</p>
+            <p>此时打开控制台输入：</p>
+            <code>document.getElementById("myVideo").playbackRate = 16</code>
+            <p>就直接可以调整为16倍速。</p>
+            <p>但是我们发现，在w3c的手册中并无onended属性，所以这个可能是网站开发者自行添加的一个方法，在控制台直接输入：</p>
+            <code>document.getElementById("myVideo").onended()</code>
+            <p>就会发现视频右上角直接跳出“已完成”字样。</p>
+            <p>刷新后发现目录中的该视频显示已完成，但是注意尽量只在一个页面只有一个和视频的情况下使用，因为测试过程中发现有一个页面两个视频有翻车风险。</p>
+            <p>至此，js的命令和油猴插件的基本功能确定。油猴插件相当于在相应的页面上直接运行插件中的js代码，所以直接写需要的js即可。</p>
+            <p>添加几个按钮，设置不同速度和一键完成，在完成键上设置确定选项。</p>
+            <p>具体实现效果如下图所示。</p>
+            <hr>
+            <img src="./pic/web0102.png" alt="插件效果">
+            <p>图方便直接将按钮设置成fixed定位。</p>
+            <p>打开视频后测试无问题，无需打开控制台即可调整。</p>
+            <p>代码压缩包下载链接<a href="http://47.94.166.180/nextcloud/index.php/s/wi4cSJX6sYXyZt9">（点我）</a>，导入油猴插件</p>
+            <p>还有网站的视频链接没有提到，复制直接在新标签页打开，右键直接另存为（吐槽一下这个网站太粗心了，几乎没有加密）。</p>
+            <p>所以现在网课就可以直接加速或一键完成，然后把网上的东西下载下来自己随便看。</p>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <h2 class="others"> 其他 </h2>
+    <p class="myma">
+        <a href="mailto:1271661038@qq.com" class="email-link"> 联系我的邮箱</a>
+    </p>
+</footer>
+</body>
+
+</html>

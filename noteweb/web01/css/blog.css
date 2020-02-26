@@ -1,0 +1,16 @@
+p {
+  text-indent: 34px;
+}
+code {
+  background: #FFF;
+  border: 1px solid #EEE;
+  border-left: 6px solid #CCC;
+  color: #666;
+  display: block;
+  font: normal 1em Tahoma, sans-serif;
+  line-height: 1.6em;
+  margin: 12px;
+  padding: 8px 10px;
+  white-space: pre;
+}
+/*# sourceMappingURL=blog.css.map */

@@ -8,7 +8,7 @@ HITzyc
 <head>
     <meta charset="UTF-8"/>
     <title>
-        笔记 ————记录各种学习笔记
+        笔记
     </title>
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
     <link rel="stylesheet" href="./../icon/fontawesome-free-5.12.1-web/css/all.min.css">
@@ -130,14 +130,15 @@ HITzyc
 				changeIcon(btn1stMenu[i].getElementsByTagName("i")[0],hasclass(div2ndMenu[i],"menuClose"));
 			}
 		}
-		console.log(btn1stMenu.length);
+		toggleClass(div2ndMenu[1],"menuClose");
+		changeIcon(btn1stMenu[1].getElementsByTagName("i")[0],hasclass(div2ndMenu[1],"menuClose"));
+
     </script>
     <article>
         <div id="articleList">
             <ul>
                 <li><h2>笔记更新记录</h2></li>
-                <li>2/25 更新文章 简易油猴插件开发 <a href="http://zycccccc.top/noteweb/web01/noteweb01.html">传送门</a>
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位于 前端-JavaScript 分类下</li>
+                <li>2/25 JavaScript <a href="./web01/noteweb01.html">简易油猴插件开发</a></li>
             </ul>
         </div>
     </article>
