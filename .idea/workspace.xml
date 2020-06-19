@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4c9eaed-b931-43ae-9080-a4a4a7cfdc53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tool/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/base.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/reset.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/style.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/css/style.min.css" afterDir="false" />
+    <list default="true" id="a4c9eaed-b931-43ae-9080-a4a4a7cfdc53" name="Default Changelist" comment="完成第一篇博客 简易油猴插件实现">
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noteweb/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noteweb/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noteweb/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noteweb/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noteweb/notelist.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/notelist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/toollist.html" beforeDir="false" afterPath="$PROJECT_DIR$/tool/toollist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/HIT.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/HIT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/hitanalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/hitanalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/hitdigital.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/hitdigital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/hitothers.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/hitothers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/hitverilog.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/hitverilog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/web01/noteweb01.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/web01/noteweb01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noteweb/webjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/noteweb/webjs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +122,29 @@
       <workItem from="1582623639077" duration="2026000" />
       <workItem from="1582625978812" duration="8414000" />
       <workItem from="1582714882533" duration="4024000" />
+      <workItem from="1582770451800" duration="104000" />
+      <workItem from="1582781298767" duration="668000" />
+      <workItem from="1582790988453" duration="18000" />
+      <workItem from="1582957032778" duration="1608000" />
+      <workItem from="1583030182440" duration="123000" />
+      <workItem from="1583063010676" duration="672000" />
+      <workItem from="1583123857011" duration="1551000" />
+      <workItem from="1583143887981" duration="35000" />
+      <workItem from="1583371342745" duration="175000" />
+      <workItem from="1583374041470" duration="88000" />
+      <workItem from="1583396182245" duration="1454000" />
+      <workItem from="1583554213761" duration="52000" />
+      <workItem from="1583554958789" duration="16000" />
+      <workItem from="1583584634838" duration="15000" />
+      <workItem from="1583745145934" duration="654000" />
+      <workItem from="1583891969094" duration="174000" />
+      <workItem from="1583971531385" duration="31000" />
+      <workItem from="1583982232190" duration="53000" />
+      <workItem from="1585619681655" duration="196000" />
+      <workItem from="1586234774607" duration="42000" />
+      <workItem from="1587198960114" duration="1172000" />
+      <workItem from="1587612447606" duration="32000" />
+      <workItem from="1592562076989" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="调整iframe样式，可调节">
       <created>1581665243141</created>
@@ -179,14 +196,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="完成第一篇博客 简易油猴插件实现" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="74" key="#Configure_Path_Variables" timestamp="1582433611795">
+    <state x="361" y="74" key="#Configure_Path_Variables" timestamp="1587200094895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="74" key="#Configure_Path_Variables/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582433611795" />
-    <state x="361" y="74" key="#Deployment" timestamp="1582124452098">
+    <state x="361" y="74" key="#Configure_Path_Variables/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1587200094895" />
+    <state x="361" y="74" key="#Deployment" timestamp="1582957132191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="74" key="#Deployment/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582124452098" />
+    <state x="361" y="74" key="#Deployment/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582957132191" />
     <state x="361" y="74" key="#Notifications" timestamp="1582625993537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -203,10 +220,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="121" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581583973428" />
-    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1582634734478">
+    <state x="385" y="10" key="CommitChangelistDialog2" timestamp="1583745800260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582634734478" />
+    <state x="385" y="10" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1583745800260" />
     <state x="430" y="210" key="EditFileWatcherDialog" timestamp="1581583985917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -287,10 +304,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1941" y="155" width="1153" height="810" key="dock-window-1/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1581417949094" />
-    <state x="586" y="149" key="ftp.server.browser" timestamp="1582122263980">
+    <state x="586" y="149" key="ftp.server.browser" timestamp="1582957131012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="149" key="ftp.server.browser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582122263980" />
+    <state x="586" y="149" key="ftp.server.browser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1582957131012" />
     <state x="636" y="317" key="publish.login" timestamp="1582434176091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

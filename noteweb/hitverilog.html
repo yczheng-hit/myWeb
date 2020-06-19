@@ -1,19 +1,163 @@
 <!--
-	h5文档声明
+HITzyc
+2020/2/11
+12:39
 -->
 <!doctype html>
 <html>
-	<head>
-		<meta  charset="UTF-8" />
-		<!--指定关键字-->
-		<title> 
-		课内知识
-		</title>	 
-	</head>
-	
-	<body>	
-		<!-- 能不能看见 -->	
-		<h1>课内知识</font></h1>
-		<h2>暂未开发</h2>
-	</body> 
+<head>
+    <meta charset="UTF-8"/>
+    <title>
+        笔记
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" href="./../icon/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./../icon/font_1631497_vslabvguidh/iconfont.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.min.css">
+    <link rel="stylesheet" href="css/JSeffect.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="shortcut icon"
+          href="https://www.bilibili.com/favicon.ico">
+    <script src="./../js/tools.js"></script>
+</head>
+
+<body id="screen">
+
+<header>
+    <div class="w1250 clearfix topbar">
+        <ul class="header-left">
+            <li class="header-tag"><a href="http://zycccccc.top"><i class="fas fa-home"></i>主站</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/noteweb/notelist.html"><i class="fas fa-pencil-alt"></i>笔记</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/tool/toollist.html"><i class="fas fa-tools"></i>工具</a></li>
+            <li class="header-tag"><a href="http://zycccccc.top/fun/funlist.html"><i class="fas fa-gamepad"></i>兴趣</a></li>
+            <li class="header-tag"><a href="http://47.94.166.180/nextcloud"><i class="fas fa-download"></i>网盘</a></li>
+        </ul>
+        <ul class="header-right">
+            <li>
+                <a href="javascript:;">
+                    <i class="fas fa-qrcode"></i>
+                    <div>
+                        <img src="./../picture/qq.jpg" alt="1271661038">
+                        <span class="myinfo">QQ</span>
+                        <img src="./../picture/weixin.jpg" alt="1271661038">
+                        <span class="myinfo">微信</span>
+                        <span class="myinfo">QQ号:1271661038</span>
+                    </div>
+                </a>
+            </li>
+            <li><a href="http://47.94.166.180"  target="_blank"><i class="fas fa-wrench"></i>备用网址</a></li>
+            <li><a href="https://swas.console.aliyun.com/?spm=5176.12818093.0.dswas.488716d0fST5Qq#/servers"
+                   target="_blank"><i class="fas fa-wrench"></i>阿里控制台</a></li>
+        </ul>
+    </div>
+</header>
+
+<div id="nav-header">
+    <div class="header-wrapper w1250">
+        <h1 id="title">笔记列表</h1>
+        <div class="search-wrapper">
+            <form class="search-input" action="#">
+                <input type="text">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<ul id="toolbar">
+    <li class="toolbar-list">
+        <a href="#screen" title="回到顶端"><i class="fas fa-home"></i> <i class="fas fa-angle-up"></i></a>
+    </li>
+    <li>
+        <a href="javascript:" title="设置鼠标特效" id="swMouseEffect">
+            <i class="fas fa-cog"> </i>
+        </a>
+    </li>
+</ul>
+
+
+
+<div id="music-box">
+    <iframe src="//music.163.com/outchain/player?type=0&id=4859376950&auto=0&height=430"
+            frameborder="no"></iframe>
+</div>
+<main class="w1250">
+    <nav>
+        <div class="firstMenu"><a href="./notelist.html" style="text-align: center;width: 100%">笔记列表</a></div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./microcontrollers.html">嵌入式</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./microcontrollersf4.html">Stm32F4</a></div>
+            <div><a href="./microcontrollerscube.html">Stm32Cube</a></div>
+            <div><a href="./microcontrollersl4.html">Stm32L4</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./web.html">前端</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./webhtml.html">html</a></div>
+            <div><a href="./webcss.html">css</a></div>
+            <div><a href="./webjs.html">JavaScript</a></div>
+            <div><a href="./webjquery.html">JQuery</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./hit.html">课内</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./hitdigital.html">数字集成电路</a></div>
+            <div><a href="./hitanalog.html">模拟集成电路</a></div>
+            <div><a href="./hitverilog.html">Verilog</a></div>
+            <div><a href="./hitothers.html">其他</a></div>
+        </div>
+        <div class="firstMenu"><button class="btn1stMenu"><i class="fas fa-plus"></i></button><a href="./others.html">其他</a></div>
+        <div class="secondMenu menuClose">
+            <div><a href="./otherslinux.html">常用linux命令</a></div>
+        </div>
+    </nav>
+    <!--    处理二级菜单-->
+    <script>
+		function changeIcon(obj,tmp) {
+			if(!tmp){ //没合上
+				removeClass(obj,"fa-plus");
+				addClass(obj,"fa-minus")
+			}else {
+				addClass(obj,"fa-plus");
+				removeClass(obj,"fa-minus")
+			}
+		}
+		var div2ndMenu = document.getElementsByClassName("secondMenu");
+		var btn1stMenu = document.getElementsByClassName("btn1stMenu");
+		//一级菜单开关
+		for (let i=0 ;i<btn1stMenu.length ;i++ ){
+			btn1stMenu[i].onclick = function () {
+				toggleClass(div2ndMenu[i],"menuClose");
+				changeIcon(btn1stMenu[i].getElementsByTagName("i")[0],hasclass(div2ndMenu[i],"menuClose"));
+			}
+		}
+		toggleClass(div2ndMenu[2],"menuClose");
+		changeIcon(btn1stMenu[2].getElementsByTagName("i")[0],hasclass(div2ndMenu[2],"menuClose"));
+
+    </script>
+    <article>
+        <div id="articleList">
+            <ul>
+                <li><h2>笔记更新记录</h2></li>
+                <li>2/27 verilog记录 </li>
+                <li><a href="https://blog.csdn.net/zn2857/article/details/78846922">IP核 SoC定义</a></li>
+                <li>register-transfer level（RTL）</li>
+                <li><p>在RTL级，IC是由一组寄存器以及寄存器之间的逻辑操作构成。之所以如此，是因为绝大多数的电路可以被看成由寄存器来存储二进制数据、由寄存器之间的逻辑操作来完成数据的处理，数据处理的流程由时序状态机来控制，这些处理和控制可以用硬件描述语言来描述。</p>
+                    <p>RTL级和门级简单的区别在于，RTL是用硬件描述语言（Verilog 或VHDL）描述理想达到的功能，门级则是用具体的逻辑单元（依赖厂家的库）来实现你的功能，门级最终可以在半导体厂加工成实际的硬件，一句话，RTL和门级是设计实现上的不同阶段，RTL经过逻辑综合后，就得到门级。</p>
+                    <p>RTL描述是可以表示为一个有限状态机,或是一个可以在一个预定的时钟周期边界上进行寄存器传输的更一般的时序状态机,通常VHDL/verilog两种语言进行描述。</p>
+                    <p>RTL电路是最早研制成功的一种有实用价值的集成电路。有N 个门的输入端并接在DCTL电路输出端，因为DCTL电路输出端门的晶体管基极导通电压，电流曲线并不能完全一致，并联在一起，输入电流易出现分配不均匀的现象。输入电流小的负载门可能得不到足够的基极驱动电流，达不到饱和，从而输出端可能从应有的“0”态改变到“1”状态，使系统出现差错。负载输入端并接越多，产生电流分配不匀的可能性越大。这种现象叫作“抢电流”。</p>
+                    <p>RTL电路是每一输入级基极串接一个电阻,旨在得到改善和补偿，使基极输入电流 Ib对基极-发射极V公式 符号-Ib特性的依赖性小一些。根据 Rb的阻值即可确定RTL电路的最大负载门数。</p>
+                    <p>RTL电路结构简单，元件少。RTL电路的严重缺点是基极回路有电阻存在，从而限制了电路的开关速度，抗干扰性能也差,使用时负载又不能过多。RTL电路是一种饱和型电路，只适用于低速线路，实际上已被淘汰。为了改善RTL逻辑电路的开关速度,在基极电阻上再并接一个电容，就构成了电阻-电容-晶体管逻辑电路（RCTL）。有了电容，不仅可以加快开关速度，而且还可以加大基极电阻，从而减小电路功耗。但是，大数值电阻和电容在集成电路制造工艺上要占去较大的芯片面积，而且取得同样容差值的设计也比较困难。因此，RCTL电路实际上也没有得到发展。</p></li>
+            </ul>
+        </div>
+    </article>
+</main>
+
+<footer>
+    <h2 class="others"> 其他 </h2>
+    <p class="myma">
+        <a href="mailto:1271661038@qq.com" class="email-link"> 联系我的邮箱</a>
+    </p>
+</footer>
+</body>
+
 </html>
